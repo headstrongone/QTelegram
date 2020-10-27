@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Server Side of QTelegram: Исходный файл userlist.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Server Side of QTelegram
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">userlist.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="userlist_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef USERLIST_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define USERLIST_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="userdata_8h.html">userdata.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_user_list.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_user_list.html">UserList</a> : <span class="keyword">public</span> <a class="code" href="class_base_data.html">BaseData</a></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_user_list.html#a806fbdb1779a2520678fdde3aec8c567">   10</a></span>&#160;    <a class="code" href="class_user_list.html#a806fbdb1779a2520678fdde3aec8c567">UserList</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_user_list.html#a806fbdb1779a2520678fdde3aec8c567">UserList</a>(<span class="keyword">const</span> QList&lt;UserData&gt; &amp;<a class="code" href="class_user_list.html#a6b44a73af8e50371f62eb2f7ed9c81fd">users</a>);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">virtual</span> QDataStream&amp; <a class="code" href="class_user_list.html#ad67885f1b1c990c29c81e3c2089095a3">toStream</a>(QDataStream &amp;stream) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">virtual</span> QDataStream&amp; <a class="code" href="class_user_list.html#aa38d9e88f7226570b60d0af951bc5f63">fromStream</a>(QDataStream &amp;stream) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="basedata_8h.html#a4a3dc025dc3cf83ebf6dbbe2c574fd35">DataType</a> <a class="code" href="class_user_list.html#ac1f906617816e092f11ce3055ef6ca63">type</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_user_list.html#ad082d265c25fb250d4e0e912f22db3d0">setUser</a>(<span class="keyword">const</span> <a class="code" href="class_user_data.html">UserData</a> &amp;user);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    QList&lt;UserData&gt; <a class="code" href="class_user_list.html#afe97a5c84b03b8239070bebf6c607d5b">getUsers</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_user_list.html#a6b44a73af8e50371f62eb2f7ed9c81fd">   33</a></span>&#160;    QList&lt;UserData&gt; <a class="code" href="class_user_list.html#a6b44a73af8e50371f62eb2f7ed9c81fd">users</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif // USERLIST_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_user_data_html"><div class="ttname"><a href="class_user_data.html">UserData</a></div><div class="ttdoc">Основной класс для хранения данных о пользователе.</div><div class="ttdef"><b>Definition:</b> userdata.h:10</div></div>
+<div class="ttc" id="aclass_user_list_html_ad67885f1b1c990c29c81e3c2089095a3"><div class="ttname"><a href="class_user_list.html#ad67885f1b1c990c29c81e3c2089095a3">UserList::toStream</a></div><div class="ttdeci">virtual QDataStream &amp; toStream(QDataStream &amp;stream) const override</div><div class="ttdoc">Переопределение метода toStream.</div><div class="ttdef"><b>Definition:</b> userlist.cpp:9</div></div>
+<div class="ttc" id="auserdata_8h_html"><div class="ttname"><a href="userdata_8h.html">userdata.h</a></div></div>
+<div class="ttc" id="aclass_user_list_html_ad082d265c25fb250d4e0e912f22db3d0"><div class="ttname"><a href="class_user_list.html#ad082d265c25fb250d4e0e912f22db3d0">UserList::setUser</a></div><div class="ttdeci">void setUser(const UserData &amp;user)</div><div class="ttdoc">Добавить клиента в массив.</div><div class="ttdef"><b>Definition:</b> userlist.cpp:19</div></div>
+<div class="ttc" id="abasedata_8h_html_a4a3dc025dc3cf83ebf6dbbe2c574fd35"><div class="ttname"><a href="basedata_8h.html#a4a3dc025dc3cf83ebf6dbbe2c574fd35">DataType</a></div><div class="ttdeci">DataType</div><div class="ttdoc">Перечисление значений qint8. Используются как флаги для данных (какие данные в данный момент передают...</div><div class="ttdef"><b>Definition:</b> basedata.h:8</div></div>
+<div class="ttc" id="aclass_user_list_html"><div class="ttname"><a href="class_user_list.html">UserList</a></div><div class="ttdoc">Класс для хранения данных о всех пользователях, находящийхся в сети.</div><div class="ttdef"><b>Definition:</b> userlist.h:7</div></div>
+<div class="ttc" id="aclass_base_data_html"><div class="ttname"><a href="class_base_data.html">BaseData</a></div><div class="ttdoc">Класс для передачи перечислений.</div><div class="ttdef"><b>Definition:</b> basedata.h:21</div></div>
+<div class="ttc" id="aclass_user_list_html_a806fbdb1779a2520678fdde3aec8c567"><div class="ttname"><a href="class_user_list.html#a806fbdb1779a2520678fdde3aec8c567">UserList::UserList</a></div><div class="ttdeci">UserList()=default</div><div class="ttdoc">Конструктор по умолчанию.</div></div>
+<div class="ttc" id="aclass_user_list_html_ac1f906617816e092f11ce3055ef6ca63"><div class="ttname"><a href="class_user_list.html#ac1f906617816e092f11ce3055ef6ca63">UserList::type</a></div><div class="ttdeci">virtual DataType type() const override</div><div class="ttdoc">Переопределение метода type.</div><div class="ttdef"><b>Definition:</b> userlist.cpp:23</div></div>
+<div class="ttc" id="aclass_user_list_html_afe97a5c84b03b8239070bebf6c607d5b"><div class="ttname"><a href="class_user_list.html#afe97a5c84b03b8239070bebf6c607d5b">UserList::getUsers</a></div><div class="ttdeci">QList&lt; UserData &gt; getUsers() const</div><div class="ttdoc">Получение списка клиентов.</div><div class="ttdef"><b>Definition:</b> userlist.cpp:27</div></div>
+<div class="ttc" id="aclass_user_list_html_aa38d9e88f7226570b60d0af951bc5f63"><div class="ttname"><a href="class_user_list.html#aa38d9e88f7226570b60d0af951bc5f63">UserList::fromStream</a></div><div class="ttdeci">virtual QDataStream &amp; fromStream(QDataStream &amp;stream) override</div><div class="ttdoc">Переопределение метода fromStream.</div><div class="ttdef"><b>Definition:</b> userlist.cpp:14</div></div>
+<div class="ttc" id="aclass_user_list_html_a6b44a73af8e50371f62eb2f7ed9c81fd"><div class="ttname"><a href="class_user_list.html#a6b44a73af8e50371f62eb2f7ed9c81fd">UserList::users</a></div><div class="ttdeci">QList&lt; UserData &gt; users</div><div class="ttdoc">Массив клиентов.</div><div class="ttdef"><b>Definition:</b> userlist.h:33</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

@@ -1,0 +1,73 @@
+QMainWindow#AuthMenu {
+  background: rgb(230, 230, 230);
+}
+
+QLineEdit#Login {
+    color: white;
+    selection-color: none;
+    font-family: "Gadugi";
+    font-size: 17px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(23, 23, 23);
+    background: rgb(76, 76, 76);
+    padding: 2px;
+}
+
+QLineEdit#Password {
+    color: white;
+    selection-color: none;
+    font-family: "Gadugi";
+    font-size: 17px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(23, 23, 23);
+    background: rgb(76, 76, 76);
+    padding: 2px;
+}
+
+
+QLabel#LoginLabel {
+    color:black;
+    font-family: "Gadugi";
+    border-width: 2px;
+}
+
+QLabel#PassLabel {
+    color: black;
+    font-family: "Gadugi";
+    border-width: 2px;
+}
+
+
+QPushButton#SignButton {
+    color: black;
+    background-color:rgb(230, 230, 230);
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(23, 23, 23);
+    padding: 4px;
+}
+
+QPushButton:pressed#SignButton{
+    padding: 2px;
+}
+
+QLabel#Logo {
+  background-color:rgb(230, 230, 230);
+}
+
+QLabel#Status {
+  color:red;
+}
+
+QLabel#label {
+  color: black;
+  font-family: 'Trocchi', serif;
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 48px;
+  margin: 0;
+  background-color:rgb(230, 230, 230);
+}
+

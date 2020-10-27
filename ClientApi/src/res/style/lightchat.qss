@@ -1,0 +1,132 @@
+QMainWindow#ChatWidget{
+	background: rgb(200, 200, 200);
+	border-color: red;
+}
+
+QListWidget::item:selected {
+	background: none;
+	color: none;
+}
+
+QListWidget::item:hover {
+	background: none;
+}
+
+
+QListWidget#usernameWidget {
+	color: silver;
+	background: rgb(200, 200, 200);
+	border-width: 2px;
+	border-style: solid;
+	border-color: rgb(52, 52, 52);
+	padding: 2px;
+}
+
+QListWidget#Users {
+	color: silver;
+	background: rgb(200, 200, 200);
+	border-width: 2px;
+	border-style: solid;
+	border-color: rgb(52, 52, 52);
+	padding: 2px;
+}
+
+QLabel#label {
+	color: black;
+	border-width: 2px;
+	border-style: solid;
+	background: rgb(200, 200, 200);
+	border-color: rgb(52, 52, 52);
+}
+
+QPushButton#pushButton {
+	color: black;
+	font: 10pt "MS Shell Dlg 2";
+	border-width: 2px;
+	border-style: solid;
+	border-color: rgb(52, 52, 52);
+	background: rgb(200, 200, 200);
+	padding: 4px;
+}
+
+QTextEdit#MessageLine {
+	color: black;
+	selection-color: none;
+	background: rgb(200, 200, 200);
+	border-width: 2px;
+	border-style: solid;
+	border-color: rgb(52, 52, 52);
+	padding: 2px;
+}
+
+QPushButton#SendButton{
+	color: black;
+	border-width: 2px;
+	border-style: solid;
+	border-color: rgb(52, 52, 52);
+	background: rgb(200, 200, 200);
+	padding: 4px;
+}
+
+QPushButton:pressed#SendButton{
+	padding: 2px;
+}
+
+QPushButton#loadImageButton{
+	background: none;
+	outline:none;
+	border-width: 2px;
+	border-style: solid;
+	height: 41px;
+	border-color: rgb(52, 52, 52);
+}
+
+QListWidget#Dialog_2 {
+	background: rgb(230, 230, 230);
+	border-color: rgb(52, 52, 52);
+}
+
+QMenuBar#menubar{
+	color: black;
+}
+
+QMenu#menuSettings {
+	color: black;
+}
+
+
+QDialog#StyleDialog {
+	background: rgb(230, 230, 230);
+	color: black;
+}
+
+QLabel#Pattern{
+	border-width: 2px;
+	border-style: solid;
+	border-color: rgb(52, 52, 52);
+	padding: 4px;
+}
+
+QPushButton#pushButton {
+	color: black;
+	border-width: 2px;
+	border-style: solid;
+	border-color: rgb(52, 52, 52);
+	padding: 4px;
+}
+
+QPushButton#selectColor{
+	color: black;
+	border-width: 2px;
+	border-style: solid;
+	border-color: rgb(52, 52, 52);
+	padding: 4px;
+}
+
+QPushButton#selectFont{
+	color: black;
+	border-width: 2px;
+	border-style: solid;
+	border-color: rgb(52, 52, 52);
+	padding: 4px;
+}

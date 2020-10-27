@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Server Side of QTelegram: Исходный файл basedata.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Server Side of QTelegram
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">basedata.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="basedata_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BASEDATA_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define BASEDATA_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QDataStream&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="basedata_8h.html#a4a3dc025dc3cf83ebf6dbbe2c574fd35">    7</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="basedata_8h.html#a4a3dc025dc3cf83ebf6dbbe2c574fd35">DataType</a> : qint8</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="basedata_8h.html#a4a3dc025dc3cf83ebf6dbbe2c574fd35ac9d3e887722f2bc482bcca9d41c512af">    9</a></span>&#160;    <a class="code" href="basedata_8h.html#a4a3dc025dc3cf83ebf6dbbe2c574fd35ac9d3e887722f2bc482bcca9d41c512af">None</a>,</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="basedata_8h.html#a4a3dc025dc3cf83ebf6dbbe2c574fd35a9ed7b6fafb4c429650c92d8c04a4dfaf">   10</a></span>&#160;    <a class="code" href="basedata_8h.html#a4a3dc025dc3cf83ebf6dbbe2c574fd35a9ed7b6fafb4c429650c92d8c04a4dfaf">Ping</a>,</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="basedata_8h.html#a4a3dc025dc3cf83ebf6dbbe2c574fd35ace394d19b5524b35a25228cccdb6d713">   11</a></span>&#160;    <a class="code" href="basedata_8h.html#a4a3dc025dc3cf83ebf6dbbe2c574fd35ace394d19b5524b35a25228cccdb6d713">AuthRequest</a>,</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="basedata_8h.html#a4a3dc025dc3cf83ebf6dbbe2c574fd35ab36be73d0d4899c5ed4240f3fa4e2872">   12</a></span>&#160;    <a class="code" href="basedata_8h.html#a4a3dc025dc3cf83ebf6dbbe2c574fd35ab36be73d0d4899c5ed4240f3fa4e2872">AuthResponse</a>,</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="basedata_8h.html#a4a3dc025dc3cf83ebf6dbbe2c574fd35a8b01655e231f348b7392cd18cbe5177e">   13</a></span>&#160;    <a class="code" href="basedata_8h.html#a4a3dc025dc3cf83ebf6dbbe2c574fd35a8b01655e231f348b7392cd18cbe5177e">UserListResponse</a>,</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="basedata_8h.html#a4a3dc025dc3cf83ebf6dbbe2c574fd35a250132c3e4273e67b3205a62d8eb417f">   14</a></span>&#160;    <a class="code" href="basedata_8h.html#a4a3dc025dc3cf83ebf6dbbe2c574fd35a250132c3e4273e67b3205a62d8eb417f">NewConnection</a>,</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="basedata_8h.html#a4a3dc025dc3cf83ebf6dbbe2c574fd35a1a53e8572ae64be0ce71ec2ebf7c290c">   15</a></span>&#160;    <a class="code" href="basedata_8h.html#a4a3dc025dc3cf83ebf6dbbe2c574fd35a1a53e8572ae64be0ce71ec2ebf7c290c">Disconnection</a>,</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="basedata_8h.html#a4a3dc025dc3cf83ebf6dbbe2c574fd35aea0743f55f135ea73ae4a4e362a2af0a">Msg</a> <span class="comment">// &#39;Message&#39; reduction</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="basedata_8h.html#a4a3dc025dc3cf83ebf6dbbe2c574fd35aea0743f55f135ea73ae4a4e362a2af0a">   17</a></span>&#160;};</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_base_data.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_base_data.html">BaseData</a></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_base_data.html#a3d1b0c5b4d9c3620bcb4602831e0dc53">   24</a></span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_base_data.html#a3d1b0c5b4d9c3620bcb4602831e0dc53">BaseData</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">friend</span> QDataStream &amp;<a class="code" href="class_base_data.html#a321bca30a2644d73ccc74ca538cfb630">operator &gt;&gt; </a>(QDataStream &amp;stream, <a class="code" href="class_base_data.html">BaseData</a> &amp;data);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">friend</span> QDataStream &amp;<a class="code" href="class_base_data.html#a259ef735eca20385892b62c50c71ce7a">operator &lt;&lt; </a>(QDataStream &amp;stream, <span class="keyword">const</span> <a class="code" href="class_base_data.html">BaseData</a> &amp;data);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_base_data.html#ad50780f214e7c2b6c1a67223e5b0e336">   33</a></span>&#160;    <span class="keyword">virtual</span> QDataStream&amp; <a class="code" href="class_base_data.html#ad50780f214e7c2b6c1a67223e5b0e336">toStream</a>(QDataStream &amp;stream) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_base_data.html#a44e9884fe66199e884049f12f3111f8d">   36</a></span>&#160;    <span class="keyword">virtual</span> QDataStream&amp; <a class="code" href="class_base_data.html#a44e9884fe66199e884049f12f3111f8d">fromStream</a>(QDataStream &amp;stream) = 0;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_base_data.html#ac1a1705f53a84070e0f3715d2da00234">   39</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="basedata_8h.html#a4a3dc025dc3cf83ebf6dbbe2c574fd35">DataType</a> <a class="code" href="class_base_data.html#ac1a1705f53a84070e0f3715d2da00234">type</a>() <span class="keyword">const</span>  = 0;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_base_data.html#acfcd539e90ed2a923b56ad4f4a8f7b0b">   42</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_base_data.html#acfcd539e90ed2a923b56ad4f4a8f7b0b">~BaseData</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;QDataStream &amp;<a class="code" href="basedata_8h.html#a321bca30a2644d73ccc74ca538cfb630">operator &gt;&gt; </a>(QDataStream &amp;stream, <a class="code" href="class_base_data.html">BaseData</a> &amp;data);</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="basedata_8h.html#a7411f94549dc41bd7d02a4482da595bf">   46</a></span>&#160;QDataStream &amp;<a class="code" href="basedata_8h.html#a7411f94549dc41bd7d02a4482da595bf">operator &lt;&lt; </a>(QDataStream &amp;stream, <a class="code" href="class_base_data.html">BaseData</a> &amp;data);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif // BASEDATA_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_base_data_html_a259ef735eca20385892b62c50c71ce7a"><div class="ttname"><a href="class_base_data.html#a259ef735eca20385892b62c50c71ce7a">BaseData::operator&lt;&lt;</a></div><div class="ttdeci">friend QDataStream &amp; operator&lt;&lt;(QDataStream &amp;stream, const BaseData &amp;data)</div><div class="ttdoc">Перегрузка оператора &lt;&lt;.</div><div class="ttdef"><b>Definition:</b> basedata.cpp:3</div></div>
+<div class="ttc" id="abasedata_8h_html_a321bca30a2644d73ccc74ca538cfb630"><div class="ttname"><a href="basedata_8h.html#a321bca30a2644d73ccc74ca538cfb630">operator&gt;&gt;</a></div><div class="ttdeci">QDataStream &amp; operator&gt;&gt;(QDataStream &amp;stream, BaseData &amp;data)</div><div class="ttdef"><b>Definition:</b> basedata.cpp:7</div></div>
+<div class="ttc" id="abasedata_8h_html_a4a3dc025dc3cf83ebf6dbbe2c574fd35ac9d3e887722f2bc482bcca9d41c512af"><div class="ttname"><a href="basedata_8h.html#a4a3dc025dc3cf83ebf6dbbe2c574fd35ac9d3e887722f2bc482bcca9d41c512af">None</a></div><div class="ttdeci">@ None</div><div class="ttdef"><b>Definition:</b> basedata.h:9</div></div>
+<div class="ttc" id="abasedata_8h_html_a4a3dc025dc3cf83ebf6dbbe2c574fd35ace394d19b5524b35a25228cccdb6d713"><div class="ttname"><a href="basedata_8h.html#a4a3dc025dc3cf83ebf6dbbe2c574fd35ace394d19b5524b35a25228cccdb6d713">AuthRequest</a></div><div class="ttdeci">@ AuthRequest</div><div class="ttdef"><b>Definition:</b> basedata.h:11</div></div>
+<div class="ttc" id="abasedata_8h_html_a4a3dc025dc3cf83ebf6dbbe2c574fd35"><div class="ttname"><a href="basedata_8h.html#a4a3dc025dc3cf83ebf6dbbe2c574fd35">DataType</a></div><div class="ttdeci">DataType</div><div class="ttdoc">Перечисление значений qint8. Используются как флаги для данных (какие данные в данный момент передают...</div><div class="ttdef"><b>Definition:</b> basedata.h:8</div></div>
+<div class="ttc" id="abasedata_8h_html_a4a3dc025dc3cf83ebf6dbbe2c574fd35a9ed7b6fafb4c429650c92d8c04a4dfaf"><div class="ttname"><a href="basedata_8h.html#a4a3dc025dc3cf83ebf6dbbe2c574fd35a9ed7b6fafb4c429650c92d8c04a4dfaf">Ping</a></div><div class="ttdeci">@ Ping</div><div class="ttdef"><b>Definition:</b> basedata.h:10</div></div>
+<div class="ttc" id="aclass_base_data_html_acfcd539e90ed2a923b56ad4f4a8f7b0b"><div class="ttname"><a href="class_base_data.html#acfcd539e90ed2a923b56ad4f4a8f7b0b">BaseData::~BaseData</a></div><div class="ttdeci">virtual ~BaseData()=default</div><div class="ttdoc">Деструктор.</div></div>
+<div class="ttc" id="abasedata_8h_html_a4a3dc025dc3cf83ebf6dbbe2c574fd35a1a53e8572ae64be0ce71ec2ebf7c290c"><div class="ttname"><a href="basedata_8h.html#a4a3dc025dc3cf83ebf6dbbe2c574fd35a1a53e8572ae64be0ce71ec2ebf7c290c">Disconnection</a></div><div class="ttdeci">@ Disconnection</div><div class="ttdef"><b>Definition:</b> basedata.h:15</div></div>
+<div class="ttc" id="aclass_base_data_html"><div class="ttname"><a href="class_base_data.html">BaseData</a></div><div class="ttdoc">Класс для передачи перечислений.</div><div class="ttdef"><b>Definition:</b> basedata.h:21</div></div>
+<div class="ttc" id="aclass_base_data_html_a321bca30a2644d73ccc74ca538cfb630"><div class="ttname"><a href="class_base_data.html#a321bca30a2644d73ccc74ca538cfb630">BaseData::operator&gt;&gt;</a></div><div class="ttdeci">friend QDataStream &amp; operator&gt;&gt;(QDataStream &amp;stream, BaseData &amp;data)</div><div class="ttdoc">Перегрузка оператора &gt;&gt;.</div><div class="ttdef"><b>Definition:</b> basedata.cpp:7</div></div>
+<div class="ttc" id="aclass_base_data_html_a3d1b0c5b4d9c3620bcb4602831e0dc53"><div class="ttname"><a href="class_base_data.html#a3d1b0c5b4d9c3620bcb4602831e0dc53">BaseData::BaseData</a></div><div class="ttdeci">BaseData()=default</div><div class="ttdoc">Конструктор</div></div>
+<div class="ttc" id="aclass_base_data_html_a44e9884fe66199e884049f12f3111f8d"><div class="ttname"><a href="class_base_data.html#a44e9884fe66199e884049f12f3111f8d">BaseData::fromStream</a></div><div class="ttdeci">virtual QDataStream &amp; fromStream(QDataStream &amp;stream)=0</div><div class="ttdoc">Переопределение метода fromStream.</div></div>
+<div class="ttc" id="abasedata_8h_html_a7411f94549dc41bd7d02a4482da595bf"><div class="ttname"><a href="basedata_8h.html#a7411f94549dc41bd7d02a4482da595bf">operator&lt;&lt;</a></div><div class="ttdeci">QDataStream &amp; operator&lt;&lt;(QDataStream &amp;stream, BaseData &amp;data)</div></div>
+<div class="ttc" id="abasedata_8h_html_a4a3dc025dc3cf83ebf6dbbe2c574fd35ab36be73d0d4899c5ed4240f3fa4e2872"><div class="ttname"><a href="basedata_8h.html#a4a3dc025dc3cf83ebf6dbbe2c574fd35ab36be73d0d4899c5ed4240f3fa4e2872">AuthResponse</a></div><div class="ttdeci">@ AuthResponse</div><div class="ttdef"><b>Definition:</b> basedata.h:12</div></div>
+<div class="ttc" id="abasedata_8h_html_a4a3dc025dc3cf83ebf6dbbe2c574fd35a8b01655e231f348b7392cd18cbe5177e"><div class="ttname"><a href="basedata_8h.html#a4a3dc025dc3cf83ebf6dbbe2c574fd35a8b01655e231f348b7392cd18cbe5177e">UserListResponse</a></div><div class="ttdeci">@ UserListResponse</div><div class="ttdef"><b>Definition:</b> basedata.h:13</div></div>
+<div class="ttc" id="aclass_base_data_html_ad50780f214e7c2b6c1a67223e5b0e336"><div class="ttname"><a href="class_base_data.html#ad50780f214e7c2b6c1a67223e5b0e336">BaseData::toStream</a></div><div class="ttdeci">virtual QDataStream &amp; toStream(QDataStream &amp;stream) const =0</div><div class="ttdoc">Переопределение метода toStream.</div></div>
+<div class="ttc" id="abasedata_8h_html_a4a3dc025dc3cf83ebf6dbbe2c574fd35aea0743f55f135ea73ae4a4e362a2af0a"><div class="ttname"><a href="basedata_8h.html#a4a3dc025dc3cf83ebf6dbbe2c574fd35aea0743f55f135ea73ae4a4e362a2af0a">Msg</a></div><div class="ttdeci">@ Msg</div><div class="ttdef"><b>Definition:</b> basedata.h:16</div></div>
+<div class="ttc" id="abasedata_8h_html_a4a3dc025dc3cf83ebf6dbbe2c574fd35a250132c3e4273e67b3205a62d8eb417f"><div class="ttname"><a href="basedata_8h.html#a4a3dc025dc3cf83ebf6dbbe2c574fd35a250132c3e4273e67b3205a62d8eb417f">NewConnection</a></div><div class="ttdeci">@ NewConnection</div><div class="ttdef"><b>Definition:</b> basedata.h:14</div></div>
+<div class="ttc" id="aclass_base_data_html_ac1a1705f53a84070e0f3715d2da00234"><div class="ttname"><a href="class_base_data.html#ac1a1705f53a84070e0f3715d2da00234">BaseData::type</a></div><div class="ttdeci">virtual DataType type() const =0</div><div class="ttdoc">Переопределение метода type.</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

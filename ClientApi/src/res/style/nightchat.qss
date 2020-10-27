@@ -1,0 +1,146 @@
+QMainWindow#ChatWidget{
+	background: rgb(28, 28, 28);
+	border-color: red;
+}
+
+QListWidget::item:selected {
+	background: none;
+	color: none;
+}
+
+QListWidget::item:hover {
+	background: none;
+}
+
+QListWidget#usernameWidget {
+	font-family: "Lucida Grande";
+	font-size: 20px;
+	border-width: 2px;
+	background: rgb(28, 28, 28);
+	border-style: solid;
+	border-color: rgb(52, 52, 52);
+	padding: 2px;
+}
+
+QListWidget#Users {
+	color: red;
+	font-family: "Lucida Grande";
+	font-size: 20px;
+	border-width: 2px;
+	background: rgb(76, 76, 76);
+	border-style: solid;
+	border-color: rgb(52, 52, 52);
+	padding: 2px;
+}
+
+QLabel#label {
+	color: red;
+	border-width: 2px;
+	border-style: solid;
+	background: rgb(52, 52, 52);
+	border-color: rgb(23, 23, 23);
+}
+
+QPushButton#pushButton {
+	color: red;
+	font: 10pt "MS Shell Dlg 2";
+	border-width: 2px;
+	border-style: solid;
+	border-color: rgb(23, 23, 23);
+	background: rgb(76, 76, 76);
+	padding: 4px;
+}
+
+QTextEdit#MessageLine {
+	color: white;
+	selection-color: none;
+	font-family: "Lucida Grande";
+	font-size: 16px;
+	background: rgb(53, 53, 53);
+	border-width: 2px;
+	border-style: solid;
+	border-color: rgb(23, 23, 23);
+	padding: 2px;
+}
+
+QPushButton#SendButton{
+	color: red;
+	border-width: 2px;
+	border-style: solid;
+	border-color: rgb(23, 23, 23);
+	background: rgb(76, 76, 76);
+	padding: 4px;
+}
+
+QPushButton:pressed#SendButton{
+	padding: 2px;
+}
+
+QPushButton#loadImageButton{
+	background: rgb(0, 0, 0);
+	outline:none;
+	border-width: 2px;
+	border-style: solid;
+	height: 41px;
+	border-color: rgb(23, 23, 23);
+}
+
+QListWidget#Dialog_2 {
+	background: rgb(90, 90, 90);
+	border-color: rgb(23, 23, 23);
+}
+
+QMenuBar#menubar{
+	color: red;
+	background: rgb(28, 28, 28);
+}
+
+QMenu#menuSettings {
+	color: red;
+	background: rgb(28, 28, 28);
+}
+
+QDialog#StyleDialog {
+	background: rgb(28, 28, 28);
+	color: black;
+}
+
+QLabel#Pattern{
+	border-width: 2px;
+	border-style: solid;
+	border-color: rgb(52, 52, 52);
+	padding: 4px;
+}
+
+QPushButton#pushButton {
+	color: red;
+	border-width: 2px;
+	border-style: solid;
+	border-color: rgb(52, 52, 52);
+	padding: 4px;
+}
+
+QLabel#currentFont{
+	color:red;
+}
+
+QLabel#currentColor{
+	color:red;
+}
+
+
+QPushButton#selectColor{
+	color: red;
+	border-width: 2px;
+	border-style: solid;
+	border-color: rgb(52, 52, 52);
+	padding: 4px;
+}
+
+QPushButton#selectFont{
+	color: red;
+	border-width: 2px;
+	border-style: solid;
+	border-color: rgb(52, 52, 52);
+	padding: 4px;
+}

@@ -1,0 +1,888 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Client Side of QTelegram: Класс NetService</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Client Side of QTelegram
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-slots">Закрытые слоты</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="class_net_service-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс NetService</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Основной класс для передачи/приема информации между клиентом и сервером.  
+ <a href="class_net_service.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="netservice_8h_source.html">netservice.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:NetService:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_net_service.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a5715e9791988413fdf9d367ae3220842"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_net_service.html#a5715e9791988413fdf9d367ae3220842">NetService</a> (QObject *parent=nullptr)</td></tr>
+<tr class="memdesc:a5715e9791988413fdf9d367ae3220842"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор Qt.  <a href="class_net_service.html#a5715e9791988413fdf9d367ae3220842">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5715e9791988413fdf9d367ae3220842"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71739557f354f8da234eaf03fd3cb47c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_net_service.html#a71739557f354f8da234eaf03fd3cb47c">~NetService</a> ()</td></tr>
+<tr class="memdesc:a71739557f354f8da234eaf03fd3cb47c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор Qt.  <a href="class_net_service.html#a71739557f354f8da234eaf03fd3cb47c">Подробнее...</a><br /></td></tr>
+<tr class="separator:a71739557f354f8da234eaf03fd3cb47c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d903aacaa00172b566d4a17e6dabf5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_net_service.html#a5d903aacaa00172b566d4a17e6dabf5c">write</a> (QTcpSocket *<a class="el" href="class_net_service.html#a733d080b9dcf3008132dd3535765e8a4">socket</a>, const BaseData &amp;data)</td></tr>
+<tr class="memdesc:a5d903aacaa00172b566d4a17e6dabf5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запись и отправка на сервер данных, передаваемых клиентом.  <a href="class_net_service.html#a5d903aacaa00172b566d4a17e6dabf5c">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5d903aacaa00172b566d4a17e6dabf5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
+Закрытые слоты</h2></td></tr>
+<tr class="memitem:ab0d7402cde0cba873ae806349a422caf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_net_service.html#ab0d7402cde0cba873ae806349a422caf">onSignIn</a> (const QString &amp;username, const QString &amp;password, const int &amp;_port)</td></tr>
+<tr class="memdesc:ab0d7402cde0cba873ae806349a422caf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод, вызываемый сразу же после нажатия кпопки подключения. Подключается к серверу.  <a href="class_net_service.html#ab0d7402cde0cba873ae806349a422caf">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab0d7402cde0cba873ae806349a422caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a204e3ef32a59f4f628bd5b52ba9b2e89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_net_service.html#a204e3ef32a59f4f628bd5b52ba9b2e89">onDisconnectbutton</a> ()</td></tr>
+<tr class="memdesc:a204e3ef32a59f4f628bd5b52ba9b2e89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод, вызываемый после нажатия кнопки отключения от сервера. Закрывает сокет, отключает от сервера.  <a href="class_net_service.html#a204e3ef32a59f4f628bd5b52ba9b2e89">Подробнее...</a><br /></td></tr>
+<tr class="separator:a204e3ef32a59f4f628bd5b52ba9b2e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2d161d4a4803a61de2887d6881ae194"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_net_service.html#ab2d161d4a4803a61de2887d6881ae194">onSocketConnected</a> ()</td></tr>
+<tr class="memdesc:ab2d161d4a4803a61de2887d6881ae194"><td class="mdescLeft">&#160;</td><td class="mdescRight">Если от сервера пришло сообщение об успешном подключение, отправляет серверу данные о пользователе.  <a href="class_net_service.html#ab2d161d4a4803a61de2887d6881ae194">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab2d161d4a4803a61de2887d6881ae194"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a264e76304bc41b852c77b10f5e531a19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_net_service.html#a264e76304bc41b852c77b10f5e531a19">onSocketDisconnected</a> ()</td></tr>
+<tr class="memdesc:a264e76304bc41b852c77b10f5e531a19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Если от сервера пришло сообщение об отключении пользователя, закрывает сокет.  <a href="class_net_service.html#a264e76304bc41b852c77b10f5e531a19">Подробнее...</a><br /></td></tr>
+<tr class="separator:a264e76304bc41b852c77b10f5e531a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a968c6ea05e23026b3ffabade08dbe9e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_net_service.html#a968c6ea05e23026b3ffabade08dbe9e1">onConnectionTimeOut</a> ()</td></tr>
+<tr class="memdesc:a968c6ea05e23026b3ffabade08dbe9e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Если не удалось передать пакеты серверу, выдает сообщение "Connection Timeout. " в меню индетификации и закрывает сокет.  <a href="class_net_service.html#a968c6ea05e23026b3ffabade08dbe9e1">Подробнее...</a><br /></td></tr>
+<tr class="separator:a968c6ea05e23026b3ffabade08dbe9e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a151555d2a96d1d81373a4d09713405e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_net_service.html#a151555d2a96d1d81373a4d09713405e1">onSocketReadyRead</a> ()</td></tr>
+<tr class="separator:a151555d2a96d1d81373a4d09713405e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f984a4d841291823d21c22a933bd5cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_net_service.html#a9f984a4d841291823d21c22a933bd5cc">onMessageSent</a> (Message &amp;msg)</td></tr>
+<tr class="memdesc:a9f984a4d841291823d21c22a933bd5cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Передает сообщение, которое пользователь отправляет, в метод <a class="el" href="class_net_service.html#a5d903aacaa00172b566d4a17e6dabf5c" title="Запись и отправка на сервер данных, передаваемых клиентом.">write()</a>, описанный раннее.  <a href="class_net_service.html#a9f984a4d841291823d21c22a933bd5cc">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9f984a4d841291823d21c22a933bd5cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:a88f777f74ff9f71695c0ad908a1feb13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_net_service.html#a88f777f74ff9f71695c0ad908a1feb13">connectSocketSignals</a> ()</td></tr>
+<tr class="memdesc:a88f777f74ff9f71695c0ad908a1feb13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Содержит сигналы, передаваемые через сокет от сервера к пользователю.  <a href="class_net_service.html#a88f777f74ff9f71695c0ad908a1feb13">Подробнее...</a><br /></td></tr>
+<tr class="separator:a88f777f74ff9f71695c0ad908a1feb13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f386a6793860ac573ca51aae16ee28f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_net_service.html#a0f386a6793860ac573ca51aae16ee28f">readUserList</a> (QDataStream &amp;readStream)</td></tr>
+<tr class="memdesc:a0f386a6793860ac573ca51aae16ee28f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Принимает поток данных от сервера, содержащий в себе список всех пользователей, подключенный к серверу.  <a href="class_net_service.html#a0f386a6793860ac573ca51aae16ee28f">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0f386a6793860ac573ca51aae16ee28f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ada626b6f1e6ee33040391e263ab63f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_net_service.html#a4ada626b6f1e6ee33040391e263ab63f">readAuthAnswer</a> (QDataStream &amp;readStream)</td></tr>
+<tr class="memdesc:a4ada626b6f1e6ee33040391e263ab63f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Принимает поток данных от сервера, содержащий в себе ответ разрешение на подключение от сервера.  <a href="class_net_service.html#a4ada626b6f1e6ee33040391e263ab63f">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4ada626b6f1e6ee33040391e263ab63f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12e91a1d17317bfc311b08a64360744e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_net_service.html#a12e91a1d17317bfc311b08a64360744e">readNewConnection</a> (QDataStream &amp;readStream)</td></tr>
+<tr class="memdesc:a12e91a1d17317bfc311b08a64360744e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Принимает поток данных от сервера, содержащий в себе информацию о новом подключившимся пользователе.  <a href="class_net_service.html#a12e91a1d17317bfc311b08a64360744e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a12e91a1d17317bfc311b08a64360744e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54e4848285f1f41c880cf976f920ef3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_net_service.html#a54e4848285f1f41c880cf976f920ef3f">readDisconnection</a> (QDataStream &amp;readStream)</td></tr>
+<tr class="memdesc:a54e4848285f1f41c880cf976f920ef3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Принимает поток данных от сервера, содержащий в себе информацию об отключившимся пользователе.  <a href="class_net_service.html#a54e4848285f1f41c880cf976f920ef3f">Подробнее...</a><br /></td></tr>
+<tr class="separator:a54e4848285f1f41c880cf976f920ef3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab99c619b335dbfe7a7ebe0e0bb0d979b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_net_service.html#ab99c619b335dbfe7a7ebe0e0bb0d979b">readMessage</a> (QDataStream &amp;readStream)</td></tr>
+<tr class="memdesc:ab99c619b335dbfe7a7ebe0e0bb0d979b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Принимает поток данных от сервера, содержащий в себе сообщение, отправленное любым из подключившихся пользователей.  <a href="class_net_service.html#ab99c619b335dbfe7a7ebe0e0bb0d979b">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab99c619b335dbfe7a7ebe0e0bb0d979b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:aac5162fb74598b8876bf9b736c29e2e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_auth_menu.html">AuthMenu</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_net_service.html#aac5162fb74598b8876bf9b736c29e2e4">menu</a></td></tr>
+<tr class="memdesc:aac5162fb74598b8876bf9b736c29e2e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект класса окна идентификации <a class="el" href="class_auth_menu.html" title="Основной класс для графического интерфейса окна идентификации.">AuthMenu</a>.  <a href="class_net_service.html#aac5162fb74598b8876bf9b736c29e2e4">Подробнее...</a><br /></td></tr>
+<tr class="separator:aac5162fb74598b8876bf9b736c29e2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a490bad43dc69a210084e002250d0ef31"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_chat_widget.html">ChatWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_net_service.html#a490bad43dc69a210084e002250d0ef31">chat</a></td></tr>
+<tr class="memdesc:a490bad43dc69a210084e002250d0ef31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объекта класса окна чата <a class="el" href="class_chat_widget.html" title="Основной класс для графического интерфейса окна Чата.">ChatWidget</a>.  <a href="class_net_service.html#a490bad43dc69a210084e002250d0ef31">Подробнее...</a><br /></td></tr>
+<tr class="separator:a490bad43dc69a210084e002250d0ef31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b42f1745be83be69b72519c0f84a975"><td class="memItemLeft" align="right" valign="top">qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_net_service.html#a1b42f1745be83be69b72519c0f84a975">sizeRead</a> = 0</td></tr>
+<tr class="memdesc:a1b42f1745be83be69b72519c0f84a975"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переменная содержит размер сообщения, переваемого серверу.  <a href="class_net_service.html#a1b42f1745be83be69b72519c0f84a975">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1b42f1745be83be69b72519c0f84a975"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5575fa9ea2be78067cdd95d927f7951e"><td class="memItemLeft" align="right" valign="top">qint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_net_service.html#a5575fa9ea2be78067cdd95d927f7951e">type</a> = -1</td></tr>
+<tr class="memdesc:a5575fa9ea2be78067cdd95d927f7951e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переменная содержит тип данных, которые поступили в данных момент от сервера.  <a href="class_net_service.html#a5575fa9ea2be78067cdd95d927f7951e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5575fa9ea2be78067cdd95d927f7951e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90e704dc4cb56d3109dbd6b31a20a36f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_net_service.html#a90e704dc4cb56d3109dbd6b31a20a36f">flagmessage</a> = false</td></tr>
+<tr class="memdesc:a90e704dc4cb56d3109dbd6b31a20a36f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаг на сообщение.  <a href="class_net_service.html#a90e704dc4cb56d3109dbd6b31a20a36f">Подробнее...</a><br /></td></tr>
+<tr class="separator:a90e704dc4cb56d3109dbd6b31a20a36f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa0f403b793a96cffc49aaf431652dde"><td class="memItemLeft" align="right" valign="top">QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_net_service.html#afa0f403b793a96cffc49aaf431652dde">tmparray</a></td></tr>
+<tr class="memdesc:afa0f403b793a96cffc49aaf431652dde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Массив для принятия пакетов от сервера. Собирает кусочки пакетов в одно целое.  <a href="class_net_service.html#afa0f403b793a96cffc49aaf431652dde">Подробнее...</a><br /></td></tr>
+<tr class="separator:afa0f403b793a96cffc49aaf431652dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af939f66768dbaff334414c31c60dea57"><td class="memItemLeft" align="right" valign="top">Message&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_net_service.html#af939f66768dbaff334414c31c60dea57">tmpmessage</a></td></tr>
+<tr class="memdesc:af939f66768dbaff334414c31c60dea57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сообщение, принятое от сервера. Содержит в себе фотографии больше 50 кб.  <a href="class_net_service.html#af939f66768dbaff334414c31c60dea57">Подробнее...</a><br /></td></tr>
+<tr class="separator:af939f66768dbaff334414c31c60dea57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a733d080b9dcf3008132dd3535765e8a4"><td class="memItemLeft" align="right" valign="top">QTcpSocket *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_net_service.html#a733d080b9dcf3008132dd3535765e8a4">socket</a></td></tr>
+<tr class="memdesc:a733d080b9dcf3008132dd3535765e8a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сокет для обмена пакетами между клиентом и сервером.  <a href="class_net_service.html#a733d080b9dcf3008132dd3535765e8a4">Подробнее...</a><br /></td></tr>
+<tr class="separator:a733d080b9dcf3008132dd3535765e8a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82b0aeb7e0a3e1d0412ad0ebd4a8b0d4"><td class="memItemLeft" align="right" valign="top">QTimer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_net_service.html#a82b0aeb7e0a3e1d0412ad0ebd4a8b0d4">ctimer</a></td></tr>
+<tr class="memdesc:a82b0aeb7e0a3e1d0412ad0ebd4a8b0d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Таймер подключения.  <a href="class_net_service.html#a82b0aeb7e0a3e1d0412ad0ebd4a8b0d4">Подробнее...</a><br /></td></tr>
+<tr class="separator:a82b0aeb7e0a3e1d0412ad0ebd4a8b0d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a446c9c6b896791c1f483dffb25bdc601"><td class="memItemLeft" align="right" valign="top">UserData&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_net_service.html#a446c9c6b896791c1f483dffb25bdc601">identifier</a></td></tr>
+<tr class="memdesc:a446c9c6b896791c1f483dffb25bdc601"><td class="mdescLeft">&#160;</td><td class="mdescRight">Информация о пользователе.  <a href="class_net_service.html#a446c9c6b896791c1f483dffb25bdc601">Подробнее...</a><br /></td></tr>
+<tr class="separator:a446c9c6b896791c1f483dffb25bdc601"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Основной класс для передачи/приема информации между клиентом и сервером. </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a5715e9791988413fdf9d367ae3220842"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5715e9791988413fdf9d367ae3220842">&#9670;&nbsp;</a></span>NetService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">NetService::NetService </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор Qt. </p>
+
+</div>
+</div>
+<a id="a71739557f354f8da234eaf03fd3cb47c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71739557f354f8da234eaf03fd3cb47c">&#9670;&nbsp;</a></span>~NetService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">NetService::~NetService </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Деструктор Qt. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a88f777f74ff9f71695c0ad908a1feb13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88f777f74ff9f71695c0ad908a1feb13">&#9670;&nbsp;</a></span>connectSocketSignals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NetService::connectSocketSignals </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Содержит сигналы, передаваемые через сокет от сервера к пользователю. </p>
+
+</div>
+</div>
+<a id="a968c6ea05e23026b3ffabade08dbe9e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a968c6ea05e23026b3ffabade08dbe9e1">&#9670;&nbsp;</a></span>onConnectionTimeOut</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NetService::onConnectionTimeOut </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Если не удалось передать пакеты серверу, выдает сообщение "Connection Timeout. " в меню индетификации и закрывает сокет. </p>
+
+</div>
+</div>
+<a id="a204e3ef32a59f4f628bd5b52ba9b2e89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a204e3ef32a59f4f628bd5b52ba9b2e89">&#9670;&nbsp;</a></span>onDisconnectbutton</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NetService::onDisconnectbutton </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Метод, вызываемый после нажатия кнопки отключения от сервера. Закрывает сокет, отключает от сервера. </p>
+
+</div>
+</div>
+<a id="a9f984a4d841291823d21c22a933bd5cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f984a4d841291823d21c22a933bd5cc">&#9670;&nbsp;</a></span>onMessageSent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NetService::onMessageSent </td>
+          <td>(</td>
+          <td class="paramtype">Message &amp;&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Передает сообщение, которое пользователь отправляет, в метод <a class="el" href="class_net_service.html#a5d903aacaa00172b566d4a17e6dabf5c" title="Запись и отправка на сервер данных, передаваемых клиентом.">write()</a>, описанный раннее. </p>
+
+</div>
+</div>
+<a id="ab0d7402cde0cba873ae806349a422caf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0d7402cde0cba873ae806349a422caf">&#9670;&nbsp;</a></span>onSignIn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NetService::onSignIn </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>username</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>password</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>_port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Метод, вызываемый сразу же после нажатия кпопки подключения. Подключается к серверу. </p>
+
+</div>
+</div>
+<a id="ab2d161d4a4803a61de2887d6881ae194"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2d161d4a4803a61de2887d6881ae194">&#9670;&nbsp;</a></span>onSocketConnected</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NetService::onSocketConnected </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Если от сервера пришло сообщение об успешном подключение, отправляет серверу данные о пользователе. </p>
+
+</div>
+</div>
+<a id="a264e76304bc41b852c77b10f5e531a19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a264e76304bc41b852c77b10f5e531a19">&#9670;&nbsp;</a></span>onSocketDisconnected</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NetService::onSocketDisconnected </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Если от сервера пришло сообщение об отключении пользователя, закрывает сокет. </p>
+
+</div>
+</div>
+<a id="a151555d2a96d1d81373a4d09713405e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a151555d2a96d1d81373a4d09713405e1">&#9670;&nbsp;</a></span>onSocketReadyRead</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NetService::onSocketReadyRead </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Принимает сообщение от сервера, определяя какой тип данных от сервера получен. В следствии, вызывает один из описанных методов, для записи данных в окно чата для пользователя. </p>
+
+</div>
+</div>
+<a id="a4ada626b6f1e6ee33040391e263ab63f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ada626b6f1e6ee33040391e263ab63f">&#9670;&nbsp;</a></span>readAuthAnswer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NetService::readAuthAnswer </td>
+          <td>(</td>
+          <td class="paramtype">QDataStream &amp;&#160;</td>
+          <td class="paramname"><em>readStream</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Принимает поток данных от сервера, содержащий в себе ответ разрешение на подключение от сервера. </p>
+
+</div>
+</div>
+<a id="a54e4848285f1f41c880cf976f920ef3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54e4848285f1f41c880cf976f920ef3f">&#9670;&nbsp;</a></span>readDisconnection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NetService::readDisconnection </td>
+          <td>(</td>
+          <td class="paramtype">QDataStream &amp;&#160;</td>
+          <td class="paramname"><em>readStream</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Принимает поток данных от сервера, содержащий в себе информацию об отключившимся пользователе. </p>
+
+</div>
+</div>
+<a id="ab99c619b335dbfe7a7ebe0e0bb0d979b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab99c619b335dbfe7a7ebe0e0bb0d979b">&#9670;&nbsp;</a></span>readMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NetService::readMessage </td>
+          <td>(</td>
+          <td class="paramtype">QDataStream &amp;&#160;</td>
+          <td class="paramname"><em>readStream</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Принимает поток данных от сервера, содержащий в себе сообщение, отправленное любым из подключившихся пользователей. </p>
+
+</div>
+</div>
+<a id="a12e91a1d17317bfc311b08a64360744e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12e91a1d17317bfc311b08a64360744e">&#9670;&nbsp;</a></span>readNewConnection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NetService::readNewConnection </td>
+          <td>(</td>
+          <td class="paramtype">QDataStream &amp;&#160;</td>
+          <td class="paramname"><em>readStream</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Принимает поток данных от сервера, содержащий в себе информацию о новом подключившимся пользователе. </p>
+
+</div>
+</div>
+<a id="a0f386a6793860ac573ca51aae16ee28f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f386a6793860ac573ca51aae16ee28f">&#9670;&nbsp;</a></span>readUserList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NetService::readUserList </td>
+          <td>(</td>
+          <td class="paramtype">QDataStream &amp;&#160;</td>
+          <td class="paramname"><em>readStream</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Принимает поток данных от сервера, содержащий в себе список всех пользователей, подключенный к серверу. </p>
+
+</div>
+</div>
+<a id="a5d903aacaa00172b566d4a17e6dabf5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d903aacaa00172b566d4a17e6dabf5c">&#9670;&nbsp;</a></span>write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NetService::write </td>
+          <td>(</td>
+          <td class="paramtype">QTcpSocket *&#160;</td>
+          <td class="paramname"><em>socket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const BaseData &amp;&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Запись и отправка на сервер данных, передаваемых клиентом. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a490bad43dc69a210084e002250d0ef31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a490bad43dc69a210084e002250d0ef31">&#9670;&nbsp;</a></span>chat</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_chat_widget.html">ChatWidget</a>* NetService::chat</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Объекта класса окна чата <a class="el" href="class_chat_widget.html" title="Основной класс для графического интерфейса окна Чата.">ChatWidget</a>. </p>
+
+</div>
+</div>
+<a id="a82b0aeb7e0a3e1d0412ad0ebd4a8b0d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82b0aeb7e0a3e1d0412ad0ebd4a8b0d4">&#9670;&nbsp;</a></span>ctimer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QTimer* NetService::ctimer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Таймер подключения. </p>
+
+</div>
+</div>
+<a id="a90e704dc4cb56d3109dbd6b31a20a36f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90e704dc4cb56d3109dbd6b31a20a36f">&#9670;&nbsp;</a></span>flagmessage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NetService::flagmessage = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Флаг на сообщение. </p>
+
+</div>
+</div>
+<a id="a446c9c6b896791c1f483dffb25bdc601"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a446c9c6b896791c1f483dffb25bdc601">&#9670;&nbsp;</a></span>identifier</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">UserData NetService::identifier</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Информация о пользователе. </p>
+
+</div>
+</div>
+<a id="aac5162fb74598b8876bf9b736c29e2e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac5162fb74598b8876bf9b736c29e2e4">&#9670;&nbsp;</a></span>menu</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_auth_menu.html">AuthMenu</a>* NetService::menu</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Объект класса окна идентификации <a class="el" href="class_auth_menu.html" title="Основной класс для графического интерфейса окна идентификации.">AuthMenu</a>. </p>
+
+</div>
+</div>
+<a id="a1b42f1745be83be69b72519c0f84a975"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b42f1745be83be69b72519c0f84a975">&#9670;&nbsp;</a></span>sizeRead</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">qint64 NetService::sizeRead = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Переменная содержит размер сообщения, переваемого серверу. </p>
+
+</div>
+</div>
+<a id="a733d080b9dcf3008132dd3535765e8a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a733d080b9dcf3008132dd3535765e8a4">&#9670;&nbsp;</a></span>socket</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QTcpSocket* NetService::socket</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сокет для обмена пакетами между клиентом и сервером. </p>
+
+</div>
+</div>
+<a id="afa0f403b793a96cffc49aaf431652dde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa0f403b793a96cffc49aaf431652dde">&#9670;&nbsp;</a></span>tmparray</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QByteArray NetService::tmparray</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Массив для принятия пакетов от сервера. Собирает кусочки пакетов в одно целое. </p>
+
+</div>
+</div>
+<a id="af939f66768dbaff334414c31c60dea57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af939f66768dbaff334414c31c60dea57">&#9670;&nbsp;</a></span>tmpmessage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Message NetService::tmpmessage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сообщение, принятое от сервера. Содержит в себе фотографии больше 50 кб. </p>
+
+</div>
+</div>
+<a id="a5575fa9ea2be78067cdd95d927f7951e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5575fa9ea2be78067cdd95d927f7951e">&#9670;&nbsp;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">qint8 NetService::type = -1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Переменная содержит тип данных, которые поступили в данных момент от сервера. </p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li><a class="el" href="netservice_8h_source.html">netservice.h</a></li>
+<li><a class="el" href="netservice_8cpp.html">netservice.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

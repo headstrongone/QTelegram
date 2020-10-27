@@ -1,0 +1,13 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource>
+        <file>res/img/logo2.jpg</file>
+        <file>res/img/attach.png</file>
+        <file>res/img/46.gif</file>
+	<file>res/style/lightauth.qss</file>
+	<file>res/style/nightauth.qss</file>
+	<file>res/style/lightchat.qss</file>
+	<file>res/style/nightchat.qss</file>
+	<file>res/fonts/FuturaPT-Bold.ttf</file>
+	<file>res/fonts/FuturaPT-Medium.ttf</file>
+    </qresource>
+</RCC>

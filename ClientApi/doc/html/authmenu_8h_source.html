@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Client Side of QTelegram: Исходный файл authmenu.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Client Side of QTelegram
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">authmenu.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="authmenu_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef AUTHMENU_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define AUTHMENU_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QMainWindow&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="_settings_wrapper_8cpp.html">SettingsWrapper.cpp</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;QT_BEGIN_NAMESPACE</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="namespace_ui.html">    8</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_ui.html">Ui</a> { <span class="keyword">class </span><a class="code" href="class_auth_menu.html">AuthMenu</a>; }</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;QT_END_NAMESPACE</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_auth_menu.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_auth_menu.html">AuthMenu</a> : <span class="keyword">public</span> QMainWindow</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_auth_menu.html#abd040c3f6874e8a1773eddfbd67f48e2">AuthMenu</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_auth_menu.html#a2e1e08654d057cf91fd982cccbf66d6f">~AuthMenu</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_auth_menu.html#a3455b822e49fdafcc64119f1bfee114c">setStatus</a>(<span class="keyword">const</span> QString &amp;status);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_auth_menu.html#a4280a893cd5cace0dbd11030c35e4d81">setupWindowSetting</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;signals:</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_auth_menu.html#ad9d792c50292fbc9786721ee68805f62">   35</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_auth_menu.html#ad9d792c50292fbc9786721ee68805f62">signIn</a>(<span class="keyword">const</span> QString &amp;username, <span class="keyword">const</span> QString &amp;password, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;_port);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_auth_menu.html#a45ba4837e6ee5a1ce9d9c9880c789a04">on_SignButton_clicked</a>(); </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_auth_menu.html#af25ba1c93a2d8a286e19e6a52f5142cf">on_Login_returnPressed</a>(); </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_auth_menu.html#a03623663ec52f648860e23c5533f0569">   42</a></span>&#160;    Ui::AuthMenu *<a class="code" href="class_auth_menu.html#a03623663ec52f648860e23c5533f0569">ui</a>;  </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_auth_menu.html#a7cd417ace05b18072d37de118b8089f5">   43</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_auth_menu.html#a7cd417ace05b18072d37de118b8089f5">ports</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif // AUTHMENU_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_auth_menu_html_a3455b822e49fdafcc64119f1bfee114c"><div class="ttname"><a href="class_auth_menu.html#a3455b822e49fdafcc64119f1bfee114c">AuthMenu::setStatus</a></div><div class="ttdeci">void setStatus(const QString &amp;status)</div><div class="ttdoc">При подключении и/или ошибке подключения передает QString, которой содержит описание проблемы подключ...</div><div class="ttdef"><b>Definition:</b> authmenu.cpp:52</div></div>
+<div class="ttc" id="a_settings_wrapper_8cpp_html"><div class="ttname"><a href="_settings_wrapper_8cpp.html">SettingsWrapper.cpp</a></div></div>
+<div class="ttc" id="aclass_auth_menu_html_a03623663ec52f648860e23c5533f0569"><div class="ttname"><a href="class_auth_menu.html#a03623663ec52f648860e23c5533f0569">AuthMenu::ui</a></div><div class="ttdeci">Ui::AuthMenu * ui</div><div class="ttdoc">Интерфейс объекта класса окна идентификации AuthMenu.</div><div class="ttdef"><b>Definition:</b> authmenu.h:42</div></div>
+<div class="ttc" id="aclass_auth_menu_html"><div class="ttname"><a href="class_auth_menu.html">AuthMenu</a></div><div class="ttdoc">Основной класс для графического интерфейса окна идентификации.</div><div class="ttdef"><b>Definition:</b> authmenu.h:13</div></div>
+<div class="ttc" id="aclass_auth_menu_html_a7cd417ace05b18072d37de118b8089f5"><div class="ttname"><a href="class_auth_menu.html#a7cd417ace05b18072d37de118b8089f5">AuthMenu::ports</a></div><div class="ttdeci">int ports</div><div class="ttdef"><b>Definition:</b> authmenu.h:43</div></div>
+<div class="ttc" id="aclass_auth_menu_html_af25ba1c93a2d8a286e19e6a52f5142cf"><div class="ttname"><a href="class_auth_menu.html#af25ba1c93a2d8a286e19e6a52f5142cf">AuthMenu::on_Login_returnPressed</a></div><div class="ttdeci">void on_Login_returnPressed()</div><div class="ttdoc">Событие при нажатии на поле Login.</div><div class="ttdef"><b>Definition:</b> authmenu.cpp:62</div></div>
+<div class="ttc" id="anamespace_ui_html"><div class="ttname"><a href="namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> authmenu.h:8</div></div>
+<div class="ttc" id="aclass_auth_menu_html_abd040c3f6874e8a1773eddfbd67f48e2"><div class="ttname"><a href="class_auth_menu.html#abd040c3f6874e8a1773eddfbd67f48e2">AuthMenu::AuthMenu</a></div><div class="ttdeci">AuthMenu(QWidget *parent=nullptr)</div><div class="ttdoc">Конструктор Qt.</div><div class="ttdef"><b>Definition:</b> authmenu.cpp:8</div></div>
+<div class="ttc" id="aclass_auth_menu_html_a4280a893cd5cace0dbd11030c35e4d81"><div class="ttname"><a href="class_auth_menu.html#a4280a893cd5cace0dbd11030c35e4d81">AuthMenu::setupWindowSetting</a></div><div class="ttdeci">void setupWindowSetting()</div><div class="ttdoc">Создание конфигурационного файла</div><div class="ttdef"><b>Definition:</b> authmenu.cpp:66</div></div>
+<div class="ttc" id="aclass_auth_menu_html_ad9d792c50292fbc9786721ee68805f62"><div class="ttname"><a href="class_auth_menu.html#ad9d792c50292fbc9786721ee68805f62">AuthMenu::signIn</a></div><div class="ttdeci">void signIn(const QString &amp;username, const QString &amp;password, const int &amp;_port)</div><div class="ttdoc">Отправляет сигнал запроса на подключение пользователя, содержащий логин и пароль серверу.</div></div>
+<div class="ttc" id="aclass_auth_menu_html_a2e1e08654d057cf91fd982cccbf66d6f"><div class="ttname"><a href="class_auth_menu.html#a2e1e08654d057cf91fd982cccbf66d6f">AuthMenu::~AuthMenu</a></div><div class="ttdeci">~AuthMenu()</div><div class="ttdoc">Деструктор Qt.</div><div class="ttdef"><b>Definition:</b> authmenu.cpp:18</div></div>
+<div class="ttc" id="aclass_auth_menu_html_a45ba4837e6ee5a1ce9d9c9880c789a04"><div class="ttname"><a href="class_auth_menu.html#a45ba4837e6ee5a1ce9d9c9880c789a04">AuthMenu::on_SignButton_clicked</a></div><div class="ttdeci">void on_SignButton_clicked()</div><div class="ttdoc">Событие при нажатии кнопки Sign In.</div><div class="ttdef"><b>Definition:</b> authmenu.cpp:22</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

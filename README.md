@@ -22,5 +22,5 @@ Stack: C++, Qt Framework 5.13.0, Doxygen
 
 ## Пример работы
 
-![alt text](https://github.com/headstrongone/QTelegram/tree/main/src/1.jpg?raw=true)
-![alt text](https://github.com/headstrongone/QTelegram/tree/main/src/2.jpg?raw=true)
+![alt text](https://github.com/headstrongone/QTelegram/blob/main/src/1.png?raw=true)
+![alt text](https://github.com/headstrongone/QTelegram/blob/main/src/2.png?raw=true)
